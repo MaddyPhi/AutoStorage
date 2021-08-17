@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors></translationContributors>
+    <texts>
+		<text name="store_warehouse" text="Entrepôt"/>
+		<text name="store_shed" text="Hangar"/>
+		<text name="function_warehouse" text="Installation de stockage automatique pour les palettes de la plupart des types. Convient à 264 palettes et mesure environ 31 m x 52 m."/>
+		<text name="function_shed" text="Installation de stockage automatique pour les palettes de la plupart des types. Convient à 48 palettes et mesure environ 12 m x 26 m."/>
+		<text name="item_rack_0" text="Rang 1, Étagère 1"/>
+		<text name="item_rack_1" text="Rang 1, Étagère 2"/>
+		<text name="item_rack_2" text="Rang 1, Étagère 3"/>
+		<text name="item_rack_3" text="Rang 1, Étagère 4"/>
+		<text name="item_rack_4" text="Rang 1, Étagère 5"/>
+		<text name="item_rack_5" text="Rang 1, Étagère 6"/>
+		<text name="item_rack_6" text="Rang 1, Étagère 7"/>
+		<text name="item_rack_7" text="Rang 2, Étagère 1"/>
+		<text name="item_rack_8" text="Rang 2, Étagère 2"/>
+		<text name="item_rack_9" text="Rang 2, Étagère 3"/>
+		<text name="item_rack_10" text="Rang 2, Étagère 4"/>
+		<text name="item_rack_11" text="Rang 2, Étagère 5"/>
+		<text name="item_rack_12" text="Rang 2, Étagère 6"/>
+		<text name="item_rack_13" text="Rang 3, Étagère 1"/>
+		<text name="item_rack_14" text="Rang 3, Étagère 2"/>
+		<text name="item_rack_15" text="Rang 3, Étagère 3"/>
+		<text name="item_rack_16" text="Rang 3, Étagère 4"/>
+		<text name="item_rack_17" text="Rang 3, Étagère 5"/>
+		<text name="item_rack_18" text="Rang 3, Étagère 6"/>
+		<text name="item_rack_19" text="Rang 3, Étagère 7"/>
+		<text name="item_rack_20" text="Étagère avant 1"/>
+		<text name="item_rack_21" text="Étagère avant 2"/>
+		<text name="shed_item_rack_0" text="Étagère 1"/>
+		<text name="shed_item_rack_1" text="Étagère 2"/>
+		<text name="shed_item_rack_2" text="Étagère 3"/>
+		<text name="shed_item_rack_3" text="Étagère 4"/>
+		<text name="action_open_door" text="Ouvre la porte"/>
+		<text name="action_close_door" text="Ferme la porte"/>
+		<text name="action_light_on" text="Lumières allumées"/>
+		<text name="action_light_off" text="Lumières éteintes"/>
+		<text name="menu_dialog" text="dialogue"/>
+		<text name="menu_open" text="Ouvre"/>
+		<text name="menu_contents" text="contenu"/>
+		<text name="menu_shelf_contents" text="Contenu de l'étagère"/>
+		<text name="menu_outbound_contents" text="Bloc sortant"/>
+		<text name="menu_unload" text="Décharger les palettes"/>
+		<text name="menu_pallet" text="palettes"/>
+	</texts>
+</l10n>

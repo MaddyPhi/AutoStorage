@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors></translationContributors>
+    <texts>
+		<text name="store_warehouse" text="Warehouse"/>
+		<text name="store_shed" text="Shed"/>
+		<text name="function_warehouse" text="Automatic Storage facility for pallets of most types. Fits 264 pallets and measures approximately 31m x 52m."/>
+		<text name="function_shed" text="Automatic Storage facility for pallets of most types. Fits 48 pallets and measures approximately 12m x 26m."/>
+		<text name="item_rack_0" text="Isle 1, Rack 1"/>
+		<text name="item_rack_1" text="Isle 1, Rack 2"/>
+		<text name="item_rack_2" text="Isle 1, Rack 3"/>
+		<text name="item_rack_3" text="Isle 1, Rack 4"/>
+		<text name="item_rack_4" text="Isle 1, Rack 5"/>
+		<text name="item_rack_5" text="Isle 1, Rack 6"/>
+		<text name="item_rack_6" text="Isle 1, Rack 7"/>
+		<text name="item_rack_7" text="Isle 2, Rack 1"/>
+		<text name="item_rack_8" text="Isle 2, Rack 2"/>
+		<text name="item_rack_9" text="Isle 2, Rack 3"/>
+		<text name="item_rack_10" text="Isle 2, Rack 4"/>
+		<text name="item_rack_11" text="Isle 2, Rack 5"/>
+		<text name="item_rack_12" text="Isle 2, Rack 6"/>
+		<text name="item_rack_13" text="Isle 3, Rack 1"/>
+		<text name="item_rack_14" text="Isle 3, Rack 2"/>
+		<text name="item_rack_15" text="Isle 3, Rack 3"/>
+		<text name="item_rack_16" text="Isle 3, Rack 4"/>
+		<text name="item_rack_17" text="Isle 3, Rack 5"/>
+		<text name="item_rack_18" text="Isle 3, Rack 6"/>
+		<text name="item_rack_19" text="Isle 3, Rack 7"/>
+		<text name="item_rack_20" text="Front Rack 1"/>
+		<text name="item_rack_21" text="Front Rack 2"/>
+		<text name="shed_item_rack_0" text="Rack 1"/>
+		<text name="shed_item_rack_1" text="Rack 2"/>
+		<text name="shed_item_rack_2" text="Rack 3"/>
+		<text name="shed_item_rack_3" text="Rack 4"/>
+		<text name="action_open_door" text="Open the door"/>
+		<text name="action_close_door" text="Close the door"/>
+		<text name="action_light_on" text="Lights on"/>
+		<text name="action_light_off" text="Lights off"/>
+		<text name="menu_dialog" text="dialog"/>
+		<text name="menu_open" text="Open"/>
+		<text name="menu_contents" text="contents"/>
+		<text name="menu_shelf_contents" text="Shelf Contents"/>
+		<text name="menu_outbound_contents" text="Outbound Pad"/>
+		<text name="menu_unload" text="Unload pallets"/>
+		<text name="menu_pallet" text="pallets"/>
+	</texts>
+</l10n>

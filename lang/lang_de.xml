@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<translationContributors>ThatQAGuyFromGiants</translationContributors>
+	<texts>
+		<text name="store_warehouse" text="Lagerhaus"/>
+		<text name="store_shed" text="Schuppen"/>
+		<text name="function_warehouse" text="Automatische Lagereinrichtung für die meisten Palettentypen. Kapazität 264 Paletten und die Abmessung beträgt ca. 31 x 52 m."/>
+		<text name="function_shed" text="Automatische Lagereinrichtung für die meisten Palettentypen. Kapazität 48 Paletten und die Abmessung beträgt ca. 12 x 26 m."/>
+		<text name="item_rack_0" text="Zeile 1, Gestell 1"/>
+		<text name="item_rack_1" text="Zeile 1, Gestell 2"/>
+		<text name="item_rack_2" text="Zeile 1, Gestell 3"/>
+		<text name="item_rack_3" text="Zeile 1, Gestell 4"/>
+		<text name="item_rack_4" text="Zeile 1, Gestell 5"/>
+		<text name="item_rack_5" text="Zeile 1, Gestell 6"/>
+		<text name="item_rack_6" text="Zeile 1, Gestell 7"/>
+		<text name="item_rack_7" text="Zeile 2, Gestell 1"/>
+		<text name="item_rack_8" text="Zeile 2, Gestell 2"/>
+		<text name="item_rack_9" text="Zeile 2, Gestell 3"/>
+		<text name="item_rack_10" text="Zeile 2, Gestell 4"/>
+		<text name="item_rack_11" text="Zeile 2, Gestell 5"/>
+		<text name="item_rack_12" text="Zeile 2, Gestell 6"/>
+		<text name="item_rack_13" text="Zeile 3, Gestell 1"/>
+		<text name="item_rack_14" text="Zeile 3, Gestell 2"/>
+		<text name="item_rack_15" text="Zeile 3, Gestell 3"/>
+		<text name="item_rack_16" text="Zeile 3, Gestell 4"/>
+		<text name="item_rack_17" text="Zeile 3, Gestell 5"/>
+		<text name="item_rack_18" text="Zeile 3, Gestell 6"/>
+		<text name="item_rack_19" text="Zeile 3, Gestell 7"/>
+		<text name="item_rack_20" text="Vorderseite Gestell 1"/>
+		<text name="item_rack_21" text="Vorderseite Gestell 2"/>
+		<text name="shed_item_rack_0" text="Gestell 1"/>
+		<text name="shed_item_rack_1" text="Gestell 2"/>
+		<text name="shed_item_rack_2" text="Gestell 3"/>
+		<text name="shed_item_rack_3" text="Gestell 4"/>
+		<text name="action_open_door" text="Tür öffnen"/>
+		<text name="action_close_door" text="Tür schließen"/>
+		<text name="action_light_on" text="Licht an"/>
+		<text name="action_light_off" text="Licht aus"/>
+		<text name="menu_dialog" text="Dialog"/>
+		<text name="menu_open" text="Öffne"/>
+		<text name="menu_contents" text="Inhalt"/>
+		<text name="menu_shelf_contents" text="Regalinhalt"/>
+		<text name="menu_outbound_contents" text="Ausgehende Paletten"/>
+		<text name="menu_unload" text="Paletten entladen"/>
+		<text name="menu_pallet" text="Paletten"/>
+	</texts>
+</l10n>

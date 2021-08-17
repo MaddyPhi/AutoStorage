@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="53">
+    <author>MaddyPhi</author>
+    <version>1.0.0.0</version>
+	<title>
+		<en>Automatic Storage</en>
+		<de>Automatische Lagerung</de>
+		<fr>Stockage Automatique</fr>
+		<pt>Armazém Automático</pt>
+		<ru>Автоматические склады</ru>
+	</title>
+	<description>
+		<en>
+<![CDATA[Have a bunch of pallets that you have been storing in random places around your farm? Struggle with a forklift? Well, we've got the solution for you... The Automatic Warehouse and the Automatic Shed!
+
+With these storage facilities you will be able to store most conventional pallets, even GC production pallets. Not only that but you will be able to do so, automatically. In the warehouse, you can store up to 264 pallets in a large, 31m X 52m storage space while in the shed you can store up to 48 pallets in the more compact 12m x 26m space.
+
+Automatic loading is simple. Just bring your pallets to the unloading zone and push the buzzer (it's red). Your pallets will be unloaded in the blink of an eye on to the next available shelf spaces. For the warehouse, the unloading zone is located outside the loading dock and, for the shed, in front on the right side.
+
+To retrieve your pallets, simply walk up to any rack with pallets stored on its shelves and you can activate a convenient dialog. In the dialog, you will be able to choose which pallets you would like to retrieve and on confirmation, they will be moved to the pickup area. For the warehouse, the pickup area can be found between the door and the loading dock. The shed's pickup area is in front on the left.
+
+But, if you need it done "the right way" and a more manual approach is required, the automatic warehouse and shed offer you the flexibility to do it manually too. Whether unloading on to the shelves or picking from the shelves you can do so manually with your favourite lifting device. Even if you loaded the shelves automatically, you can unload them manually. Or, if you loaded the shelves manually, you can unload them automatically. This storage system offers you the ability to do things which ever way works best for you.
+
+Seasons Ready
+
+Warehouse:
+Price: 87000 $
+Daily Upkeep: 100 $
+
+Shed:
+Price: 28000 $
+Daily Upkeep: 30 $
+]]>
+		</en>
+		<de>
+<![CDATA[Haben Sie viele Paletten, die Sie an verschiedenen Stellen Ihres Betriebs gelagert haben? Tun Sie sich schwer mit dem Gabelstapler? Dann haben wir die Lösung für Sie... Das automatische Lager und der automatische Unterstand!
+
+Mit diesem Lager können Sie die meisten herkömmlichen Paletten lagern, sogar GC-Produktionspaletten. Nicht nur das, sondern Sie können dies automatisch tun. Im Lager können Sie bis zu 264 Paletten auf einem großen Lagerraum von 31 x 52 m lagern, während Sie im Unterstand bis zu 48 Paletten auf kompaktem Raum von 12 x 26 m lagern können.
+
+Automatisches Laden ist einfach. Bringen Sie einfach Ihre Paletten zur Entladezone und drücken Sie den Buzzer (er ist rot). Ihre Paletten werden im Handumdrehen auf den nächsten freien Regalplatz entladen. Beim Lager befindet sich die Entladezone außerhalb der Laderampe und beim Unterstand vorne rechts.
+
+Um Ihre Paletten für Sie nach draußen zu bringen, gehen Sie einfach zu einem Regal im Lager und öffnen Sie den praktischen Dialog. Im Dialog können Sie auswählen, welche Paletten Sie abholen möchten und nach Bestätigung werden diese in den Abholbereich verschoben. Für das Lager befindet sich der Abholbereich zwischen der Tür und der Laderampe. Der Abholbereich des Unterstandes befindet sich vorne links.
+
+Wenn es jedoch "richtig" gemacht werden muss und ein manueller Ansatz erforderlich ist, bietet Ihnen das automatische Lager und der Unterstand die Flexibilität, dies manuell zu tun. Ob Abladen in die Regale oder Kommissionieren aus den Regalen, Sie können dies manuell mit Ihrem bevorzugten Hubgerät tun. Auch wenn Sie die Regale automatisch beladen haben, können Sie sie manuell entladen.
+
+Seasons ready
+
+Lagerhalle:
+Preis: 87000 €
+Unterhalt: 100 €/ Tag
+
+Unterstand:
+Preis: 28000 €
+Unterhalt: 30 €/ Tag
+]]>
+		</de>
+		<fr>
+<![CDATA[Vous avez un tas de palettes que vous avez stockées dans des endroits aléatoires autour de votre ferme ? Vous avez du mal avec un chariot élévateur ? Eh bien, nous avons la solution pour vous... L'entrepôt automatique et le hangar automatique !
+
+Avec ces installations de stockage, vous pourrez stocker la plupart des palettes conventionnelles, même les palettes de production GC. Non seulement cela, mais vous pourrez le faire automatiquement. Dans l'entrepôt, vous pouvez stocker jusqu'à 264 palettes dans un grand espace de stockage de 31 m x 52 m tandis que dans le hangar, vous pouvez stocker jusqu'à 48 palettes dans l'espace plus compact de 12 m x 26 m.
+
+Le chargement automatique est simple. Il suffit d'amener vos palettes dans la zone de déchargement et d'appuyer sur le bouton de commande (il est rouge). Vos palettes seront déchargées en un clin d'œil sur les prochains rayonnages disponibles. Pour l'entrepôt, la zone de déchargement est située à l'extérieur du quai de chargement et, pour le hangar, en avant du côté droit.
+
+Pour récupérer vos palettes, dirigez-vous simplement vers n'importe quel étagère avec des palettes stockées sur ses étagères et vous pouvez activer une boîte de dialogue pratique. Dans la boîte de dialogue, vous pourrez choisir les palettes que vous souhaitez récupérer et sur confirmation, elles seront déplacées vers la zone de ramassage. Pour l'entrepôt, la zone de ramassage se situe entre la porte et le quai de chargement. La zone de ramassage du hangar est en face à gauche.
+
+Mais, si vous avez besoin de le faire "de la bonne manière" et qu'une approche plus manuelle est requise, l'entrepôt et le hangar automatiques vous offrent la possibilité de le faire manuellement, aussi. Qu'il s'agisse de décharger sur les étagères ou de ramasser dans les étagères, vous pouvez le faire manuellement avec votre appareil de levage préféré. Même si vous avez chargé les étagères automatiquement, vous pouvez les décharger manuellement. Alternativement, si vous avez chargé les étagères manuellement, vous pouvez les décharger automatiquement. Ce système de stockage vous offre la possibilité de faire les choses de la manière qui vous convient le mieux.
+
+Prêt pour les saisons
+
+Dépot:
+Prix ​​: 87000 €
+Entretien quotidien : 100 €
+
+Hangar:
+Prix ​​: 28000 €
+Entretien quotidien : 30 €
+]]>
+		</fr>
+		<pt>
+<![CDATA[Você tem um monte de paletes espalhados em lugares aleatórios em sua fazenda? Vive lutando com suas empilhadeiras? Nós temos a solução: o Armazém Automático e o Galpão Automático!
+
+Com essas instalações de armazenamento, você vai poder armazenar a maioria dos paletes convencionais além daqueles de produção da Global Company. E tem mais, você vai poder fazer isso automaticamente! No depósito grande, você pode armazenar até 264 paletes em um grande espaço de armazenamento de 31 m X 52 m, enquanto no galpão você pode armazenar até 48 paletes em um espaço mais compacto de 12 m x 26 m.
+
+O carregamento automático é muito simples: basta trazer seus paletes para a zona de descarga e apertar a campainha (é vermelha). Seus paletes serão armazenados em um piscar de olhos para as próximas prateleira disponíveis. Para o armazém, o local de descarga está localizado fora da doca de carga e, para o galpão, na frente, do lado direito.
+
+Para pegar seus paletes de volta, simplesmente vá até qualquer rack ocupado e ative uma caixa de diálogo no local. Na caixa de diálogo, você poderá escolher quais paletes deseja recuperar e, após a confirmação, serão movidos para a área de coleta. Para o armazém, a área de coleta pode ser encontrada entre a porta e a doca de carga. A área de coleta do galpão fica em frente, à esquerda.
+
+Caso queira fazer "da maneira certa", ambas as instalações têm a opção de fazer manualmente também. Quer descarregar ou retirar das prateleiras? Pode fazer manualmente com o seu veículo favorito. Mesmo se você carregou as prateleiras automaticamente, pode descarregá-las manualmente, ou vice versa. Este sistema de armazenamento dá a liberdade de fazer do seu jeito.
+
+Pronto para mod Seasons
+
+Warehouse (Armazém):
+Preço: 87000 $
+Manutenção diária: 100 $
+
+Shed (Galpão):
+Preço: 28000 $
+Manutenção diária: 30 $
+]]>
+		</pt>
+	</description>
+    <iconFilename>modIcon.dds</iconFilename>
+    <multiplayer supported="true"/>
+	<l10n filenamePrefix="lang/lang"/>
+    <brands>
+       <brand name="CHUBBY_UNICORN" title="Chubby Unicorn Construction Co." image="brand_maddyphi.dds" />
+    </brands>
+    <storeItems>
+        <storeItem xmlFilename="autowarehouse.xml"/>
+		<storeItem xmlFilename="autoshed.xml"/>
+    </storeItems>
+	<extraSourceFiles>
+		<sourceFile filename="scripts/register.lua"/>
+	</extraSourceFiles>
+</modDesc>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement type="empty" profile="newLayer" />
+    <GuiElement type="bitmap" profile="dialogFullscreenBg" />
+
+	<!--Dialog box -->
+    <GuiElement debugEnabled="false" type="bitmap" profile="rackDialogBg" id="dialogElement">
+		<!-- Dialog box title -->
+        <GuiElement type="bitmap" profile="rackHeaderBoxDocked">
+            <GuiElement type="text" profile="rackHeaderText" id="dialogTitleElement"/>
+        </GuiElement>
+		<!-- Shelf Items list box -->
+		<GuiElement type="empty" profile="shelfItemsListBox">
+			<!-- Shelf Items title -->
+			<GuiElement type="text" profile="shelfItemsListBoxTitle" text="" id="shelfItemsTitle"/>
+			<GuiElement type="text" profile="shelfItemListSpace" id="shelfItemsSpaceText" />
+			<!-- Shelf Items list -->
+			<GuiElement type="stableList" profile="shelfItemsList" id="shelfItems" itemTemplateId="shelfItemTemplate">
+				<!-- Shelf Item template -->
+				<GuiElement type="listItem" profile="shelfItemsListItem" id="shelfItemTemplate">
+					<GuiElement type="text" profile="shelfItemsListItemName" name="name"/>
+					<GuiElement type="text" profile="shelfItemsListItemLevel" name="level"/>
+				</GuiElement>
+			</GuiElement>
+		</GuiElement>
+		<!-- Transfer buttons -->
+		<GuiElement type="empty" profile="rackTransferBox">
+			<GuiElement type="button" profile="rackBtn1" text="«" onClick="onRackInClick" id="rackInButton"/>
+			<GuiElement type="button" profile="rackBtn2" text="»" onClick="onRackOutClick" id="rackOutButton"/>
+		</GuiElement>
+		<!-- Outbound Items list box -->
+		<GuiElement type="empty" profile="outboundItemsListBox">
+			<!-- Outbound Items title -->
+			<GuiElement type="text" profile="shelfItemsListBoxTitle" text="" id="outboundItemsTitle"/>
+			<GuiElement type="text" profile="shelfItemListSpace" id="outboundItemsSpaceText" />
+			<!-- Outbound Items list -->
+			<GuiElement type="stableList" profile="shelfItemsList" id="outboundItems" itemTemplateId="outboundItemTemplate">
+				<!-- Outbouns Item template -->
+				<GuiElement type="listItem" profile="shelfItemsListItem" id="outboundItemTemplate">
+					<GuiElement type="text" profile="shelfItemsListItemName" name="name"/>
+					<GuiElement type="text" profile="shelfItemsListItemLevel" name="level"/>
+				</GuiElement>
+			</GuiElement>
+		</GuiElement>
+		<!-- Dialog buttons -->
+        <GuiElement type="flowLayout" profile="buttonBoxDialog" id="buttonsPC">
+            <GuiElement type="button" profile="buttonOK" text="$l10n_button_confirm" onClick="onClickOk" id="yesButton"/>
+            <GuiElement type="button" profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" id="noButton"/>
+        </GuiElement>
+	</GuiElement>
+</GUI>

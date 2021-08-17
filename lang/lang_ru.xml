@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>nagor</translationContributors>
+    <texts>
+		<text name="store_warehouse" text="Склад"/>
+		<text name="store_shed" text="Навес"/>
+		<text name="function_warehouse" text="Автоматический склад для поддонов большинства типов. Вмещает 264 поддона и имеет размеры примерно 31 x 52 м."/>
+		<text name="function_shed" text="Автоматическое хранилище для поддонов большинства типов. Вмещает 48 поддонов и имеет размеры примерно 12 х 26 м."/>
+		<text name="item_rack_0" text="Секция 1, Стеллаж 1"/>
+		<text name="item_rack_1" text="Секция 1, Стеллаж 2"/>
+		<text name="item_rack_2" text="Секция 1, Стеллаж 3"/>
+		<text name="item_rack_3" text="Секция 1, Стеллаж 4"/>
+		<text name="item_rack_4" text="Секция 1, Стеллаж 5"/>
+		<text name="item_rack_5" text="Секция 1, Стеллаж 6"/>
+		<text name="item_rack_6" text="Секция 1, Стеллаж 7"/>
+		<text name="item_rack_7" text="Секция 2, Стеллаж 1"/>
+		<text name="item_rack_8" text="Секция 2, Стеллаж 2"/>
+		<text name="item_rack_9" text="Секция 2, Стеллаж 3"/>
+		<text name="item_rack_10" text="Секция 2, Стеллаж 4"/>
+		<text name="item_rack_11" text="Секция 2, Стеллаж 5"/>
+		<text name="item_rack_12" text="Секция 2, Стеллаж 6"/>
+		<text name="item_rack_13" text="Секция 3, Стеллаж 1"/>
+		<text name="item_rack_14" text="Секция 3, Стеллаж 2"/>
+		<text name="item_rack_15" text="Секция 3, Стеллаж 3"/>
+		<text name="item_rack_16" text="Секция 3, Стеллаж 4"/>
+		<text name="item_rack_17" text="Секция 3, Стеллаж 5"/>
+		<text name="item_rack_18" text="Секция 3, Стеллаж 6"/>
+		<text name="item_rack_19" text="Секция 3, Стеллаж 7"/>
+		<text name="item_rack_20" text="Передний стеллаж 1"/>
+		<text name="item_rack_21" text="Передний стеллаж 2"/>
+		<text name="shed_item_rack_0" text="Стеллаж 1"/>
+		<text name="shed_item_rack_1" text="Стеллаж 2"/>
+		<text name="shed_item_rack_2" text="Стеллаж 3"/>
+		<text name="shed_item_rack_3" text="Стеллаж 4"/>
+		<text name="action_open_door" text="Открыть дверь"/>
+		<text name="action_close_door" text="Закрыть дверь"/>
+		<text name="action_light_on" text="Включить освещение"/>
+		<text name="action_light_off" text="Выключить освещение"/>
+		<text name="menu_dialog" text="Управление складом"/>
+		<text name="menu_open" text="Открыть"/>
+		<text name="menu_contents" text="Содержимое"/>
+		<text name="menu_shelf_contents" text="Содержимое полок"/>
+		<text name="menu_outbound_contents" text="Исходящие поддоны"/>
+		<text name="menu_unload" text="Складировать поддоны"/>
+		<text name="menu_pallet" text="Поддоны"/>
+	</texts>
+</l10n>

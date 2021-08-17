@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUIProfiles>
+	<Presets>
+		<Preset name="colourTransparent" value="0 0 0 0"/>
+		<Preset name="colourListRowBackground" value="0.718 0.716 0.715 0.0625"/>
+		<Preset name="colourListRowBackgroundAlternate" value="0.118 0.116 0.115 0.20" />
+		<Preset name="colourListRowBackgroundHighlighted" value="0.9910 0.3865 0.0100 1"/>
+        <Preset name="colourFrame" value="0.718 0.716 0.715 0.25"/>
+		<Preset name="colourButton" value="0.718 0.716 0.715 0.0625"/>
+		<Preset name="colourButtonHighlight" value="0.118 0.116 0.115 0.20"/>
+	</Presets>
+	<Traits>
+        <Trait name="anchorTopLeft">
+            <Value name="screenAlign" value="topLeft" />
+            <Value name="positionOrigin" value="topLeft" />
+        </Trait>
+        <Trait name="anchorTopCentre">
+            <Value name="screenAlign" value="topCenter" />
+            <Value name="positionOrigin" value="topCenter" />
+        </Trait>
+        <Trait name="anchorTopRight">
+            <Value name="screenAlign" value="topRight" />
+            <Value name="positionOrigin" value="topRight" />
+        </Trait>
+        <Trait name="anchorMiddleLeft">
+            <Value name="screenAlign" value="middleLeft" />
+            <Value name="positionOrigin" value="middleLeft" />
+        </Trait>
+        <Trait name="anchorMiddleCentre">
+            <Value name="screenAlign" value="middleCenter" />
+            <Value name="positionOrigin" value="middleCenter" />
+        </Trait>
+        <Trait name="anchorMiddleRight">
+            <Value name="screenAlign" value="middleRight" />
+            <Value name="positionOrigin" value="middleRight" />
+        </Trait>
+        <Trait name="anchorBottomLeft">
+            <Value name="screenAlign" value="bottomLeft" />
+            <Value name="positionOrigin" value="bottomLeft" />
+        </Trait>
+        <Trait name="anchorBottomCentre">
+            <Value name="screenAlign" value="bottomCenter" />
+            <Value name="positionOrigin" value="bottomCenter" />
+        </Trait>
+        <Trait name="anchorBottomRight">
+            <Value name="screenAlign" value="bottomRight" />
+            <Value name="positionOrigin" value="bottomRight" />
+        </Trait>
+        <Trait name="frame">
+            <Value name="hasFrame" value="true" />
+            <Value name="frameThickness" value="1dp 1dp 1dp 1dp"/>
+            <Value name="frameLeftColor" value="$preset_colourFrame" />
+            <Value name="frameTopColor" value="$preset_colourFrame" />
+            <Value name="frameRightColor" value="$preset_colourFrame" />
+            <Value name="frameBottomColor" value="$preset_colourFrame" />
+        </Trait>
+		<Trait name="alternateRow">
+			<Value name="imageColor" value="$preset_colourListRowBackgroundAlternate"/>
+		</Trait>
+	</Traits>
+	<Profile name="rackDialogBg" extends="dialogBg">
+		<Value name="size" value="1240px 700px"/>
+	</Profile>
+	<Profile name="rackHeaderBoxDocked" extends="headerBoxDocked">
+		<Value name="size" value="510px 40px"/>
+	</Profile>
+	<Profile name="rackHeaderText" extends="headerText">
+		<Value name="textOffset" value="0px 4px"/>
+	</Profile>
+	<Profile name="columnBox" extends="baseReference" with="frame">
+		<Value name="size" value="520px 624px"/>
+	</Profile>
+	<Profile name="shelfItemsListBox" extends="columnBox" with="anchorTopLeft">
+		<Value name="position" value="20px -40px"/>
+	</Profile>
+	<Profile name="outboundItemsListBox" extends="columnBox" with="anchorTopRight">
+		<Value name="position" value="-20px -40px"/>
+	</Profile>
+	<Profile name="shelfItemsListBoxTitle" extends="shopMultiTextOptionTitle">
+		<Value name="textSize" value="24px"/>
+		<Value name="size" value="520px 30px"/>
+		<Value name="maxTextWidth" value="260px"/>
+	</Profile>
+	<Profile name="shelfItemListSpace" extends="shopMultiTextOptionTitle">
+		<Value name="textAlignment" value="right"/>
+		<Value name="textSize" value="24px"/>
+		<Value name="size" value="520px 30px"/>
+		<Value name="maxTextWidth" value="260px"/>
+	</Profile>
+	<Profile name="shelfItemsList" extends="list" with="anchorTopLeft">
+		<Value name="size" value="520px 624px"/>
+		<Value name="position" value="1px -2px"/>
+		<Value name="isHorizontalList" value="false"/>
+		<Value name="itemsPerCol" value="12"/>
+		<Value name="listItemHeight" value="52px"/>
+		<Value name="listItemWidth" value="520px"/>
+		<Value name="selectOnScroll" value="true"/>
+		<Value name="rowBackgroundProfile" value="shelfItemsListItem"/>
+		<Value name="rowBackgroundProfileAlternate" value="shelfItemsListItemAlternate"/>
+        <Value name="selectOnScroll" value="true"/>
+	</Profile>
+	<Profile name="shelfItemsListItem" extends="list">
+		<Value name="size" value="520px 52px"/>
+		<value name="imageColor" value="$preset_colourListRowBackground"/>
+		<value name="imageFocusedColor" value="$preset_colourListRowBackgroundHighlighted"/>
+		<value name="imageSelectedColor" value="$preset_colourListRowBackgroundHighlighted"/>
+	</Profile>
+	<Profile name="shelfItemsListItemAlternate" extends="shelfItemsListItem" with="alternateRow"/>
+	<Profile name="shelfItemsListItemName" extends="ingameMenuAnimalsListItemTypeName" with="anchorMiddleLeft">
+        <Value name="size" value="250px 30px"/>
+        <Value name="textSize" value="22px"/>
+        <Value name="textMaxWidth" value="250px"/>
+        <Value name="textResizeWidth" value="250px"/>
+        <Value name="textResetSize" value="true"/>
+        <Value name="position" value="8px 3px" />
+    </Profile>
+	<Profile name="shelfItemsListItemLevel" extends="ingameMenuAnimalsListItemTypeName" with="anchorMiddleRight">
+        <Value name="size" value="100px 30px"/>
+        <Value name="textSize" value="22px"/>
+        <Value name="textMaxWidth" value="100px"/>
+        <Value name="textResizeWidth" value="100px"/>
+        <Value name="textResetSize" value="true"/>
+        <Value name="textAlignment" value="right"/>
+        <Value name="position" value="-8px 3px" />
+        <Value name="textBold" value="false" />
+    </Profile>
+	<Profile name="rackTransferBox" with="anchorMiddleCentre">
+		<Value name="size" value="100px 624px"/>
+		<Value name="imageColor" value="$preset_colourTransparent"/>
+	</Profile>
+	<Profile name="rackButton" extends="wideButton" with="anchorMiddleCentre">
+		<Value name="size" value="100px 100px"/>
+		<Value name="textAlignment" value="center"/>
+		<Value name="textVerticalAlignment" value="middle"/>
+		<Value name="imageColor" value="$preset_colourButton"/>
+		<Value name="imageFocusedColor" value="$preset_colourButton"/>
+		<Value name="imageHighlightedColor" value="$preset_colourButton"/>
+		<value name="imagePressedColor" value="$preset_colourButtonHighlight"/>
+        <Value name="iconSize" value="0px 0px"/>
+        <Value name="iconTextOffset" value="0px 0px"/>
+        <Value name="iconUVs" value="0 0 1 1"/>
+	</Profile>
+	<Profile name="rackBtn1" extends="rackButton">
+		<Value name="position" value="0px -100px"/>
+	</Profile>
+	<Profile name="rackBtn2" extends="rackButton">
+		<Value name="position" value="0px 100px"/>
+	</Profile>
+</GUIProfiles>
