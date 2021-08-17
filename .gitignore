@@ -1,0 +1,11 @@
+*.blend
+*.blend1
+*_export_log.txt
+update.i3d
+*.png
+*.pdn
+*.gdp
+*.gdpu
+*.zip
+*.bat
+pack_files.txt

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="autowarehouse" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/textures/shared/warningStripes_diffuse.dds"/>
+    <File fileId="2" filename="$data/maps/textures/shared/warningStripes_normal.dds"/>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_specular.dds"/>
+    <File fileId="22" filename="$data/shaders/dashboardLightsShader.xml"/>
+    <File fileId="20" filename="$data/shared/clearPlastic_diffuse.dds"/>
+    <File fileId="11" filename="$data/shared/window02_diffuse.dds"/>
+    <File fileId="12" filename="$data/shared/window02_specular.dds"/>
+    <File fileId="31" filename="textures/Black_BaseColor.dds"/>
+    <File fileId="33" filename="textures/Blue_BaseColor.dds"/>
+    <File fileId="34" filename="textures/Green_BaseColor.dds"/>
+    <File fileId="35" filename="textures/Grey_BaseColor.dds"/>
+    <File fileId="29" filename="textures/T_Palete_63_BaseColor.dds"/>
+    <File fileId="32" filename="textures/TrashCan_Normal.dds"/>
+    <File fileId="17" filename="textures/door_single_Normal.dds"/>
+    <File fileId="19" filename="textures/props_Normal.dds"/>
+    <File fileId="37" filename="textures/snow_diffuse.dds"/>
+    <File fileId="38" filename="textures/snow_normal.dds"/>
+    <File fileId="39" filename="textures/snow_specular.dds"/>
+    <File fileId="23" filename="textures/streetLight_emissive.dds"/>
+    <File fileId="9" filename="textures/switch_round_button.dds"/>
+    <File fileId="36" filename="textures/transpallet_final.dds"/>
+    <File fileId="26" filename="textures/uploads_files_813877_Fuseboxes_Color.dds"/>
+    <File fileId="27" filename="textures/uploads_files_813877_Fuseboxes_Normal.dds"/>
+    <File fileId="28" filename="textures/uploads_files_813877_Fuseboxes_Specular.dds"/>
+    <File fileId="4" filename="textures/warehouse_diffuse.dds"/>
+    <File fileId="5" filename="textures/warehouse_normal.dds"/>
+    <File fileId="13" filename="textures/wire_Albedo_Alpha.dds"/>
+    <File fileId="14" filename="textures/wire_Normal.dds"/>
+    <File fileId="16" filename="textures\door_single_Albedo.dds"/>
+    <File fileId="18" filename="textures\props_Albedo.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bulb" materialId="4" specularColor="1 1 0" alphaBlending="true" customShaderId="22">
+      <Texture fileId="20"/>
+      <Custommap name="mEmissiveMap" fileId="23"/>
+      <CustomParameter name="lightControl" value="20 1 1 1"/>
+    </Material>
+    <Material name="CallButton" materialId="5" specularColor="0.494118 1 0">
+      <Texture fileId="9"/>
+    </Material>
+    <Material name="door_single_mat" materialId="6" specularColor="0.494118 1 1">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+    </Material>
+    <Material name="Fuseboxes" materialId="7">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="i3d_default_material" materialId="8" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="Pallet" materialId="9" specularColor="0.137255 1 1">
+      <Texture fileId="29"/>
+    </Material>
+    <Material name="props_mat" materialId="10" specularColor="0.494118 1 1">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+    </Material>
+    <Material name="Snow" materialId="11">
+      <Texture fileId="37"/>
+      <Normalmap fileId="38"/>
+      <Glossmap fileId="39"/>
+    </Material>
+    <Material name="SwitchButton" materialId="12" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="SwitchFrame" materialId="13" diffuseColor="0 0 0 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="SwitchLED" materialId="14" diffuseColor="0.8 0 0.00784314 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="Transpallet" materialId="15" specularColor="0.494118 1 0">
+      <Texture fileId="36"/>
+    </Material>
+    <Material name="TrashCan_Black" materialId="16">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+    </Material>
+    <Material name="TrashCan_Blue" materialId="17">
+      <Texture fileId="33"/>
+      <Normalmap fileId="32"/>
+    </Material>
+    <Material name="TrashCan_Green" materialId="18">
+      <Texture fileId="34"/>
+      <Normalmap fileId="32"/>
+    </Material>
+    <Material name="TrashCan_Grey" materialId="19">
+      <Texture fileId="35"/>
+      <Normalmap fileId="32"/>
+    </Material>
+    <Material name="TriggerMarker" materialId="20">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="Warehouse" materialId="21" specularColor="0.486275 1 0.4">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="WindowGlass" materialId="22" alphaBlending="true">
+      <Texture fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="wire_mat" materialId="23" specularColor="0.494118 1 1" alphaBlending="true">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="autowarehouse.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="Warehouse" nodeId="118">
+      <TransformGroup name="GarageDoor" nodeId="119">
+        <Shape shapeId="1" name="Barrier.000" translation="-28.5374 0.391244 -13.7785" static="true" clipDistance="200" nodeId="120" materialIds="20,21" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="Barrier.001" translation="-28.5374 0.391244 -20.086" static="true" clipDistance="200" nodeId="121" materialIds="20,21" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="GarageDoor" translation="-15.1569 4.3562 -16.9322" static="true" clipDistance="500" nodeId="122" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="4" name="GarageDoorMechanism" translation="0.180829 1.82106 1.90735e-06" static="true" clipDistance="100" nodeId="123" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="GarageDoorTrigger" translation="1.90735e-06 -0.711874 1.90735e-06" scale="1.98661 2.53293 3.27791" static="true" trigger="true" collisionMask="3145728" nodeId="124" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="6" name="Gate.011" translation="0 -2.82761 1.90735e-06" kinematic="true" clipDistance="500" nodeId="125" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="Gate.012" translation="0 -2.43029 1.90735e-06" kinematic="true" clipDistance="500" nodeId="126" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="Gate.013" translation="0 -2.03297 1.90735e-06" kinematic="true" clipDistance="500" nodeId="127" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="9" name="Gate.014" translation="0 -1.63565 1.90735e-06" kinematic="true" clipDistance="500" nodeId="128" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="10" name="Gate.015" translation="0 -1.23832 1.90735e-06" kinematic="true" clipDistance="500" nodeId="129" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="Gate.016" translation="0 -0.841001 1.90735e-06" kinematic="true" clipDistance="500" nodeId="130" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="Gate.017" translation="0 -0.443678 1.90735e-06" kinematic="true" clipDistance="500" nodeId="131" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="Gate.018" translation="0 -0.0463552 1.90735e-06" kinematic="true" clipDistance="500" nodeId="132" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="Gate.019" translation="0 0.350967 1.90735e-06" kinematic="true" clipDistance="500" nodeId="133" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="15" name="Gate.020" translation="7.62939e-05 0.749046 1.90735e-06" rotation="0 -0 -5" kinematic="true" clipDistance="500" nodeId="134" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="16" name="Gate.021" translation="0.0347052 1.14486 1.90735e-06" rotation="0 -0 -35" kinematic="true" clipDistance="500" nodeId="135" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="17" name="Ramp" translation="-15.4549 1.31005 -16.8922" static="true" clipDistance="500" nodeId="136" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="18" name="RampRailing" translation="-21.9567 1.31005 -19.0775" static="true" clipDistance="300" nodeId="137" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="LoadingDock" nodeId="138">
+        <Shape shapeId="19" name="CallButton" translation="-15.4544 1.64837 20.8521" rotation="-0 -90 0" static="true" clipDistance="100" nodeId="139" materialIds="5" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="20" name="CallButtonTrigger" translation="0.551811 -0.636308 0.99387" rotation="-0 90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="3145728" nodeId="140" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="21" name="CollectionArea" translation="-18.7961 0.0187557 4.10123" static="true" trigger="true" collisionMask="16781312" clipDistance="200" nodeId="141" materialIds="20">
+          <Shape shapeId="22" name="CollectionAreaTrigger.000" translation="1.1423 0.0148994 -6.22307" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="142" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.001" translation="1.1423 0.0148994 -4.44505" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="143" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.002" translation="1.1423 0.0148994 -2.66703" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="144" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.003" translation="1.1423 0.0148994 -0.889008" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="145" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.004" translation="1.1423 0.0148994 0.889011" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="146" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.005" translation="1.1423 0.0148994 2.66703" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="147" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.006" translation="1.1423 0.0148994 4.44505" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="148" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.007" translation="1.1423 0.0148994 6.22307" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="149" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.008" translation="-1.14231 0.0148994 -6.22307" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="150" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.009" translation="-1.14231 0.0148994 -4.44505" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="151" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.010" translation="-1.14231 0.0148994 -2.66703" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="152" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.011" translation="-1.14231 0.0148994 -0.889008" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="153" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.012" translation="-1.14231 0.0148994 0.889011" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="154" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.013" translation="-1.14231 0.0148994 2.66703" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="155" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.014" translation="-1.14231 0.0148994 4.44505" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="156" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="CollectionAreaTrigger.015" translation="-1.14231 0.0148994 6.22307" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" trigger="true" collisionMask="16781312" nodeId="157" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="23" name="LoadingDockFrame" translation="-15.1569 4.3562 15.8158" static="true" clipDistance="500" nodeId="158" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="24" name="Gate.000" translation="0 -2.82761 0" kinematic="true" clipDistance="500" nodeId="159" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="25" name="Gate.001" translation="0 -2.43029 0" kinematic="true" clipDistance="500" nodeId="160" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="26" name="Gate.002" translation="0 -2.03297 0" kinematic="true" clipDistance="500" nodeId="161" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="27" name="Gate.003" translation="0 -1.63565 0" kinematic="true" clipDistance="500" nodeId="162" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="28" name="Gate.004" translation="0 -1.23832 0" kinematic="true" clipDistance="500" nodeId="163" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="29" name="Gate.005" translation="0 -0.841001 0" kinematic="true" clipDistance="500" nodeId="164" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="30" name="Gate.006" translation="0 -0.443678 0" kinematic="true" clipDistance="500" nodeId="165" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="31" name="Gate.007" translation="0 -0.0463552 0" kinematic="true" clipDistance="500" nodeId="166" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="32" name="Gate.008" translation="0 0.350967 0" kinematic="true" clipDistance="500" nodeId="167" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="33" name="Gate.009" translation="7.62939e-05 0.749046 0" rotation="0 -0 -5" kinematic="true" clipDistance="500" nodeId="168" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="34" name="Gate.010" translation="0.0347052 1.14486 0" rotation="0 -0 -35" kinematic="true" clipDistance="500" nodeId="169" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="35" name="LoadingDockMechanism" translation="0.180829 1.82106 0" static="true" clipDistance="100" nodeId="170" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="LoadingDockTrigger" translation="1.90735e-06 -0.711874 0" scale="1.98661 2.53293 3.27791" static="true" trigger="true" collisionMask="3145728" nodeId="171" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="36" name="Platform" translation="-15.6552 1.11139 15.9757" static="true" clipDistance="300" nodeId="172" materialIds="21,20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="37" name="UnloadTrigger" translation="-21.9092 1 15.9149" static="true" trigger="true" collisionMask="16781312" nodeId="173" materialIds="8" nonRenderable="true">
+          <Shape shapeId="38" name="UnloadArea" translation="0.0879669 -0.981244 -0.113186" clipDistance="200" nodeId="174" materialIds="20"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="Racks" nodeId="175">
+        <Shape shapeId="39" name="MetalRack.000" translation="-14.9044 1.50872 -25.2469" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="176" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.000" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="177" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.000" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="178" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.001" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="179" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.002" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="180" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.003" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="181" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.004" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="182" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.005" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="183" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.006" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="184" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.007" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="185" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.008" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="186" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.009" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="187" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.010" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="188" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.011" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="189" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="43" name="MetalRack.001" translation="-7.4745 1.50872 -25.2469" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="190" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.001" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="191" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.012" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="192" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.013" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="193" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.014" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="194" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.015" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="195" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.016" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="196" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.017" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="197" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.018" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="198" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.019" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="199" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.020" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="200" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.021" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="201" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.022" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="202" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.023" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="203" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="44" name="MetalRack.002" translation="-0.0445681 1.50872 -25.2469" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="204" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.002" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="205" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.024" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="206" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.025" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="207" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.026" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="208" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.027" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="209" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.028" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="210" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.029" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="211" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.030" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="212" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.031" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="213" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.032" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="214" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.033" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="215" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.034" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="216" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.035" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="217" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="45" name="MetalRack.003" translation="7.38537 1.50872 -25.2469" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="218" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.003" translation="3.75726 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="219" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.036" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="220" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.037" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="221" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.038" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="222" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.039" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="223" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.040" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="224" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.041" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="225" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.042" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="226" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.043" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="227" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.044" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="228" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.045" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="229" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.046" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="230" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.047" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="231" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="46" name="MetalRack.004" translation="14.6977 1.50872 -8.37327" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="232" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.004" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="233" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.048" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="234" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.049" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="235" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.050" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="236" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.051" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="237" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.052" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="238" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.053" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="239" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.054" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="240" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.055" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="241" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.056" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="242" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.057" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="243" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.058" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="244" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.059" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="245" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="47" name="MetalRack.005" translation="7.26776 1.50872 -8.37327" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="246" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.005" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="247" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.060" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="248" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.061" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="249" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.062" translation="4.6504 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="250" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.063" translation="6.4508 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="251" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.064" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="252" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.065" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="253" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.066" translation="4.6504 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="254" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.067" translation="6.4508 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="255" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.068" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="256" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.069" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="257" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.070" translation="4.6504 90.3286 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="258" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.071" translation="6.4508 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="259" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="48" name="MetalRack.006" translation="-0.162176 1.50872 -8.37327" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="260" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.006" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="261" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.072" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="262" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.073" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="263" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.074" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="264" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.075" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="265" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.076" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="266" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.077" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="267" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.078" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="268" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.079" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="269" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.080" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="270" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.081" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="271" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.082" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="272" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.083" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="273" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="49" name="MetalRack.007" translation="-7.4745 1.50872 -7.36738" rotation="0 1.36604e-05 0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="274" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.007" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="275" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.084" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="276" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.085" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="277" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.086" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="278" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.087" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="279" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.088" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="280" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.089" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="281" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.090" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="282" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.091" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="283" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.092" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="284" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.093" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="285" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.094" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="286" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.095" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="287" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="50" name="MetalRack.008" translation="-0.0445652 1.50872 -7.36738" rotation="0 1.36604e-05 0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="288" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.008" translation="3.75726 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="289" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.096" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="290" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.097" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="291" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.098" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="292" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.099" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="293" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.100" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="294" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.101" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="295" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.102" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="296" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.103" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="297" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.104" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="298" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.105" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="299" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.106" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="300" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.107" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="301" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="51" name="MetalRack.009" translation="7.38537 1.50872 -7.36738" rotation="0 1.36604e-05 0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="302" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.009" translation="3.75726 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="303" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.108" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="304" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.109" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="305" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.110" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="306" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.111" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="307" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.112" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="308" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.113" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="309" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.114" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="310" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.115" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="311" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.116" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="312" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.117" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="313" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.118" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="314" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.119" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="315" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="52" name="MetalRack.010" translation="14.6977 1.50872 6.8574" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="316" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.010" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="317" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.120" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="318" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.121" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="319" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.122" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="320" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.123" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="321" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.124" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="322" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.125" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="323" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.126" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="324" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.127" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="325" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.128" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="326" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.129" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="327" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.130" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="328" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.131" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="329" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="53" name="MetalRack.011" translation="7.26776 1.50872 6.8574" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="330" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.011" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="331" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.132" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="332" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.133" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="333" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.134" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="334" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.135" translation="6.4508 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="335" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.136" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="336" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.137" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="337" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.138" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="338" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.139" translation="6.4508 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="339" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.140" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="340" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.141" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="341" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.142" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="342" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.143" translation="6.4508 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="343" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="54" name="MetalRack.012" translation="-0.162176 1.50872 6.8574" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="344" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.012" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="345" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.144" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="346" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.145" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="347" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.146" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="348" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.147" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="349" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.148" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="350" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.149" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="351" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.150" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="352" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.151" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="353" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.152" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="354" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.153" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="355" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.154" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="356" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.155" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="357" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="55" name="MetalRack.013" translation="-7.5639 1.50872 7.86329" rotation="0 1.36604e-05 0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="358" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.013" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="359" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.156" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="360" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.157" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="361" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.158" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="362" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.159" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="363" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.160" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="364" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.161" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="365" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.162" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="366" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.163" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="367" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.164" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="368" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.165" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="369" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.166" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="370" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.167" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="371" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="56" name="MetalRack.014" translation="-0.133963 1.50872 7.86329" rotation="0 1.36604e-05 0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="372" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.014" translation="3.75726 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="373" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.168" translation="1.0004 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="374" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.169" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="375" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.170" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="376" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.171" translation="6.4508 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="377" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.172" translation="1.0004 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="378" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.173" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="379" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.174" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="380" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.175" translation="6.4508 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="381" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.176" translation="1.0004 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="382" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.177" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="383" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.178" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="384" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.179" translation="6.4508 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="385" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="57" name="MetalRack.015" translation="7.29597 1.50872 7.86329" rotation="0 1.36604e-05 0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="386" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.015" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="387" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.180" translation="1.0004 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="388" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.181" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="389" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.182" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="390" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.183" translation="6.4508 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="391" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.184" translation="1.0004 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="392" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.185" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="393" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.186" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="394" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.187" translation="6.4508 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="395" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.188" translation="1.0004 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="396" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.189" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="397" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.190" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="398" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.191" translation="6.4508 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="399" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="58" name="MetalRack.016" translation="14.7871 1.50872 24.737" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="400" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.016" translation="3.75726 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="401" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.192" translation="1.0004 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="402" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.193" translation="2.8008 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="403" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.194" translation="4.6504 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="404" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.195" translation="6.4508 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="405" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.196" translation="1.0004 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="406" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.197" translation="2.8008 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="407" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.198" translation="4.6504 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="408" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.199" translation="6.4508 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="409" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.200" translation="1.0004 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="410" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.201" translation="2.8008 90.3286 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="411" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.202" translation="4.6504 90.3286 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="412" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.203" translation="6.4508 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="413" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="59" name="MetalRack.017" translation="7.35716 1.50872 24.737" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="414" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.017" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="415" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.204" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="416" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.205" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="417" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.206" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="418" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.207" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="419" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.208" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="420" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.209" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="421" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.210" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="422" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.211" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="423" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.212" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="424" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.213" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="425" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.214" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="426" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.215" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="427" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="60" name="MetalRack.018" translation="-0.0727768 1.50872 24.737" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="428" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.018" translation="3.75726 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="429" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.216" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="430" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.217" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="431" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.218" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="432" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.219" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="433" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.220" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="434" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.221" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="435" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.222" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="436" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.223" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="437" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.224" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="438" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.225" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="439" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.226" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="440" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.227" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="441" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="61" name="MetalRack.019" translation="-7.50271 1.50872 24.737" rotation="-0 -180 -0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="442" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.019" translation="3.75726 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="443" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.228" translation="1.0004 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="444" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.229" translation="2.8008 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="445" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.230" translation="4.6504 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="446" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.231" translation="6.4508 8.90921 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="447" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.232" translation="1.0004 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="448" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.233" translation="2.8008 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="449" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.234" translation="4.6504 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="450" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.235" translation="6.4508 49.612 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="451" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.236" translation="1.0004 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="452" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.237" translation="2.8008 90.3286 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="453" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.238" translation="4.6504 90.3286 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="454" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.239" translation="6.4508 90.0627 1.03936" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="455" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="62" name="MetalRack.020" translation="-14.0769 1.50872 7.19668" rotation="-0 90 0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="456" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.020" translation="3.75726 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="457" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.240" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="458" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.241" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="459" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.242" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="460" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.243" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="461" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.244" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="462" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.245" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="463" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.246" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="464" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.247" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="465" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.248" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="466" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.249" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="467" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.250" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="468" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.251" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="469" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="63" name="MetalRack.021" translation="-14.0769 1.50872 -0.233254" rotation="-0 90 0" scale="0.993307 0.045132 0.93788" static="true" clipDistance="100" nodeId="470" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="RackTrigger.021" translation="3.75727 22.0089 3.07981" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="3145728" nodeId="471" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.252" translation="1.0004 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="472" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.253" translation="2.8008 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="473" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.254" translation="4.6504 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="474" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.255" translation="6.4508 8.90921 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="475" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.256" translation="1.0004 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="476" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.257" translation="2.8008 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="477" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.258" translation="4.6504 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="478" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.259" translation="6.4508 49.612 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="479" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="41" name="ShelfTrigger.260" translation="1.0004 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="480" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.261" translation="2.8008 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="481" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="42" name="ShelfTrigger.262" translation="4.6504 90.3286 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="482" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="22" name="ShelfTrigger.263" translation="6.4508 90.0627 1.03935" scale="1 22.0089 1.0591" static="true" trigger="true" collisionMask="16781312" nodeId="483" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="64" name="ShelfGuard.000" translation="-12.1061 1.75704 -7.83393" scale="0.993307 0.993307 0.993307" static="true" clipDistance="100" nodeId="484" materialIds="20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="65" name="ShelfGuard.001" translation="-11.9417 1.75704 7.16004" rotation="-0 -90 0" scale="0.993307 0.993307 0.993307" static="true" clipDistance="100" nodeId="485" materialIds="20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="65" name="ShelfGuard.002" translation="-7.47371 1.75704 9.98313" rotation="-0 -180 -0" scale="0.993307 0.993307 0.993307" static="true" clipDistance="100" nodeId="486" materialIds="20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="65" name="ShelfGuard.003" translation="-7.6376 1.75704 4.89372" rotation="-0 90 0" scale="0.993307 0.993307 0.993307" clipDistance="100" nodeId="487" materialIds="20"/>
+        <Shape shapeId="65" name="ShelfGuard.004" translation="-7.47371 1.75704 -5.23433" rotation="-0 -180 -0" scale="0.993307 0.993307 0.993307" static="true" clipDistance="100" nodeId="488" materialIds="20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="65" name="ShelfGuard.005" translation="-7.6376 1.75704 -10.3445" rotation="-0 90 0" scale="0.993307 0.993307 0.993307" static="true" clipDistance="100" nodeId="489" materialIds="20" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="ShopDoor" nodeId="490">
+        <Shape shapeId="66" name="DoorFrame" translation="-15.4756 1.52764 -10.8635" static="true" clipDistance="500" nodeId="491" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="67" name="Door.000" translation="-0.024085 1.12417 -0.907006" kinematic="true" clipDistance="500" nodeId="492" materialIds="21,22,23" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="68" name="Handle.000" translation="0.121083 -0.101625 0.834991" kinematic="true" clipDistance="100" nodeId="493" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="69" name="Striker" translation="0.121083 -0.101625 0.828684" kinematic="true" clipDistance="100" nodeId="494" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="70" name="Door.001" translation="-0.024085 1.12417 0.907063" kinematic="true" clipDistance="500" nodeId="495" materialIds="21,22,23" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="71" name="Handle.001" translation="0.121083 -0.101625 -0.834991" kinematic="true" clipDistance="100" nodeId="496" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="72" name="DoorTrigger" translation="0.231346 -0.0201815 2.28882e-05" scale="2.16616 0.993307 0.993307" static="true" trigger="true" collisionMask="3145728" nodeId="497" materialIds="8" nonRenderable="true"/>
+          <Shape shapeId="73" name="FloorPlate" translation="-9.53674e-07 0 0" static="true" clipDistance="300" nodeId="498" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="74" name="StairRailing" translation="-15.5791 2.46549 -12.2143" static="true" clipDistance="300" nodeId="499" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="75" name="Stairs" translation="-18.4349 0.018754 -12.3385" static="true" clipDistance="500" nodeId="500" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="Windows" nodeId="501">
+        <Shape shapeId="76" name="Window.000" translation="15.0893 8.48849 -19.4851" static="true" clipDistance="500" nodeId="502" materialIds="21,22" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="77" name="Window.001" translation="15.0893 8.48849 -13.7308" static="true" clipDistance="500" nodeId="503" materialIds="21,22" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="77" name="Window.002" translation="15.0893 8.48849 -2.94483" static="true" clipDistance="500" nodeId="504" materialIds="21,22" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="77" name="Window.003" translation="15.0893 8.48849 2.90274" static="true" clipDistance="500" nodeId="505" materialIds="21,22" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="77" name="Window.004" translation="15.0893 8.48849 13.6924" static="true" clipDistance="500" nodeId="506" materialIds="21,22" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="77" name="Window.005" translation="15.0893 8.48849 19.53" static="true" clipDistance="500" nodeId="507" materialIds="21,22" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="Lights" nodeId="508">
+        <Shape shapeId="78" name="LightFrame.000" translation="-5.88736 8.96016 -0.392499" static="true" clipDistance="100" nodeId="509" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Light name="IndoorLightSource.000" translation="0 -0.0844307 0" rotation="-90 -0 0" scale="0.993307 0.993307 0.993307" clipDistance="100" nodeId="510" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="30"/>
+          <Shape shapeId="79" name="LightBulbs.000" translation="0 9.53674e-07 0" kinematic="true" clipDistance="100" nodeId="511" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="80" name="LightBulbsOff.000" translation="0 9.53674e-07 0" visibility="false" kinematic="true" clipDistance="100" nodeId="512" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="81" name="LightFrame.001" translation="-5.88736 8.96016 15.1823" static="true" clipDistance="100" nodeId="513" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Light name="IndoorLightSource.001" translation="0 -0.0844307 0" rotation="-90 -0 0" clipDistance="100" nodeId="514" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="30"/>
+          <Shape shapeId="79" name="LightBulbs.001" translation="0 9.53674e-07 0" kinematic="true" clipDistance="100" nodeId="515" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="80" name="LightBulbsOff.001" translation="0 9.53674e-07 0" visibility="false" kinematic="true" clipDistance="100" nodeId="516" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="82" name="LightFrame.002" translation="-5.88736 8.96016 -17.4985" static="true" clipDistance="100" nodeId="517" materialIds="21">
+          <Light name="IndoorLightSource.002" translation="0 -0.0844307 0" rotation="-90 -0 0" clipDistance="100" nodeId="518" type="point" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="30"/>
+          <Shape shapeId="79" name="LightBulbs.002" translation="0 9.53674e-07 0" kinematic="true" clipDistance="100" nodeId="519" materialIds="4"/>
+          <Shape shapeId="80" name="LightBulbsOff.002" translation="0 9.53674e-07 0" visibility="false" kinematic="true" clipDistance="100" nodeId="520" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="83" name="LightSwitch" translation="-14.8424 3.04542 -12.3623" rotation="-9.33467e-06 -0 0" static="true" clipDistance="100" nodeId="521" materialIds="13,12,14" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="84" name="LightTrigger" translation="0.728432 -0.543399 -9.53674e-07" rotation="9.33467e-06 -0 0" scale="1.48996 1.98661 0.993307" static="true" trigger="true" collisionMask="3145728" nodeId="522" materialIds="8" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="85" name="OutdoorLight.000" translation="-15.5791 7.78504 -16.9322" static="true" clipDistance="300" nodeId="523" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="86" name="LightBezel.000" static="true" clipDistance="300" nodeId="524" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="OutdoorLightSource.000" translation="-0.108103 -0.148996 0" rotation="-90 -0 -35" clipDistance="300" nodeId="525" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="20" coneAngle="60" dropOff="4"/>
+        </Shape>
+        <Shape shapeId="85" name="OutdoorLight.001" translation="-15.5791 7.78504 15.8294" static="true" clipDistance="300" nodeId="526" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="86" name="LightBezel.001" translation="0 0 9.53674e-07" static="true" clipDistance="300" nodeId="527" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="OutdoorLightSource.001" translation="-0.108103 -0.148996 9.53674e-07" rotation="-90 -0 -45" clipDistance="300" nodeId="528" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="30" coneAngle="90" dropOff="4"/>
+        </Shape>
+        <Shape shapeId="85" name="OutdoorLight.002" translation="-15.5791 7.78504 4.14971" static="true" clipDistance="300" nodeId="529" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="86" name="LightBezel.002" translation="0 0 -9.53674e-07" static="true" clipDistance="300" nodeId="530" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="OutdoorLightSource.002" translation="-0.108103 -0.148996 -9.53674e-07" rotation="-90 -0 -25" clipDistance="300" nodeId="531" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="30" coneAngle="110" dropOff="4"/>
+        </Shape>
+        <Shape shapeId="85" name="OutdoorLight.003" translation="-15.5791 5.37314 -10.8061" static="true" clipDistance="300" nodeId="532" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="86" name="LightBezel.003" static="true" clipDistance="300" nodeId="533" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="OutdoorLightSource.003" translation="-0.108103 -0.148996 0" rotation="-90 -0 -25" clipDistance="300" nodeId="534" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="10" coneAngle="25" dropOff="4"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="Decorations" nodeId="535">
+        <Shape shapeId="87" name="Fuseboxes" translation="-14.843 4.29461 9.77338" rotation="90 -90 0" static="true" clipDistance="100" nodeId="536" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="88" name="Pallet.000" translation="-14.0686 1.62543 9.38695" rotation="0 38 0" static="true" clipDistance="100" nodeId="537" materialIds="9" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="89" name="Pallet.001" translation="-0.393377 0.281455 0.514738" rotation="65 -23 -9.26754e-07" clipDistance="100" nodeId="538" materialIds="9"/>
+        </Shape>
+        <Shape shapeId="90" name="TrashCan_Black" translation="-14.5739 1.50872 11.342" rotation="-0 -180 -0" static="true" clipDistance="100" nodeId="539" materialIds="16" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="90" name="TrashCan_Blue" translation="-14.5739 1.50872 -13.0707" rotation="-0 -180 -0" static="true" clipDistance="100" nodeId="540" materialIds="17" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="90" name="TrashCan_Green" translation="-14.5739 1.50872 -8.6247" rotation="-0 -180 -0" static="true" clipDistance="100" nodeId="541" materialIds="18" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="90" name="TrashCan_Grey" translation="-14.5739 1.50872 -9.34216" rotation="-0 -180 -0" static="true" clipDistance="100" nodeId="542" materialIds="19" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="91" name="transpallet" translation="-12.5804 1.52974 9.20469" rotation="90 33 0" static="true" clipDistance="100" nodeId="543" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="Seasons" nodeId="544">
+        <TransformGroup name="MaskStart.000" translation="-16.5008 0 -27.7252" rotation="-0 -90 0" visibility="false" nodeId="545">
+          <TransformGroup name="MaskHeight.000" translation="0 0 -33" rotation="-0 -90 0" visibility="false" nodeId="546"/>
+          <TransformGroup name="MaskWidth.000" translation="54.9752 0 -3.8147e-06" rotation="-0 90 0" visibility="false" nodeId="547"/>
+        </TransformGroup>
+        <TransformGroup name="MaskStart.001" translation="-28.7636 0 -20.2926" rotation="-0 -90 0" visibility="false" nodeId="548">
+          <TransformGroup name="MaskHeight.001" translation="-1.90735e-06 0 -13.2636" rotation="-0 -90 0" visibility="false" nodeId="549"/>
+          <TransformGroup name="MaskWidth.001" translation="6.55299 0 0" rotation="-0 90 0" visibility="false" nodeId="550"/>
+        </TransformGroup>
+        <TransformGroup name="MaskStart.002" translation="-18.6 0 -12.4149" rotation="-0 -90 0" visibility="false" nodeId="551">
+          <TransformGroup name="MaskHeight.002" translation="0 0 -3.1" rotation="-0 -90 0" visibility="false" nodeId="552"/>
+          <TransformGroup name="MaskWidth.002" translation="6.96039 0 0" rotation="-0 90 0" visibility="false" nodeId="553"/>
+        </TransformGroup>
+        <TransformGroup name="MaskStart.003" translation="-21.3636 0 -3.36443" rotation="-0 -90 0" visibility="false" nodeId="554">
+          <TransformGroup name="MaskHeight.003" translation="-2.38419e-07 0 -5" rotation="-0 -90 0" visibility="false" nodeId="555"/>
+          <TransformGroup name="MaskWidth.003" translation="15 0 0" rotation="-0 90 0" visibility="false" nodeId="556"/>
+        </TransformGroup>
+        <TransformGroup name="MaskStart.004" translation="-31.2842 0 12.4791" rotation="-0 -90 0" visibility="false" nodeId="557">
+          <TransformGroup name="MaskHeight.004" translation="0 0 -15.0092" rotation="-0 -90 0" visibility="false" nodeId="558"/>
+          <TransformGroup name="MaskWidth.004" translation="6.9 0 0" rotation="-0 90 0" visibility="false" nodeId="559"/>
+        </TransformGroup>
+        <Shape shapeId="92" name="SnowyRoof" translation="-0.000778198 10.7453 -0.388433" scale="16.5 1 27.5" visibility="false" static="true" clipDistance="500" nodeId="569" materialIds="11" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="ClearingStart" translation="-31.4196 0 -27.7252" rotation="-0 -90 0" visibility="false" nodeId="561">
+        <TransformGroup name="ClearingHeight" translation="-1.90735e-06 0 -48.1704" rotation="-0 -90 0" visibility="false" nodeId="562"/>
+        <TransformGroup name="ClearingWidth" translation="54.9752 0 -3.8147e-06" rotation="-0 90 0" visibility="false" nodeId="563"/>
+      </TransformGroup>
+      <Shape shapeId="93" name="Structure" translation="-0.693451 8.96016 -0.392499" static="true" clipDistance="500" nodeId="564" materialIds="21" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
