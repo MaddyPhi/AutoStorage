@@ -3,7 +3,7 @@ Copyright (c) MaddyPhi, 2021
 
 Author: MaddyPhi (Madison)
 Date: 07-16-2021
-Version: 1.0.0.0
+Version: 1.0.2.0
 ]]
 
 Warehouse = {} -- Placeable Object
@@ -15,16 +15,16 @@ Unload = {} -- Unload Triggers
 Warehouse_mt = Class(Warehouse, Placeable)
 InitObjectClass(Warehouse, "Warehouse")
 
-PickupSpace_mt = Class(PickupSpace)
+PickupSpace_mt = Class(PickupSpace, Object)
 InitObjectClass(PickupSpace, "PickupSpace")
 
-Rack_mt = Class(Rack)
+Rack_mt = Class(Rack, Object)
 InitObjectClass(Rack, "Rack")
 
-Shelf_mt = Class(Shelf)
+Shelf_mt = Class(Shelf, Object)
 InitObjectClass(Shelf, "Shelf")
 
-Unload_mt = Class(Unload)
+Unload_mt = Class(Unload, Object)
 InitObjectClass(Unload, "Unload")
 
 -- Constants to differential the activate options
@@ -35,8 +35,9 @@ ACTIVATE = {
 }
 
 -------------- PickupSpace Class ---------------
-function PickupSpace:new(triggerId)
-	local self = setmetatable({}, PickupSpace_mt)
+function PickupSpace:new(isServer, isClient, triggerId, spaceId)
+	local self = Object:new(isServer, isClient, PickupSpace_mt)
+	self.spaceId = spaceId
 	self.triggerId = triggerId
 	self.items = {}
 	self.occupied = false
@@ -69,8 +70,8 @@ end
 -------------- End PickupSpace Class ----------
 
 -------------- Rack Class ---------------------
-function Rack:new(triggerId, name)
-	local self = setmetatable({}, Rack_mt)
+function Rack:new(isServer, isClient, triggerId, name)
+	local self = Object:new(isServer, isClient, Rack_mt)
 	self.triggerId = triggerId
 	self.name = name -- name of the rack as found in l10n
 	self.shelves = {} -- collection of shelves for this rack
@@ -99,8 +100,8 @@ end
 -------------- End Rack Class -----------------
 
 -------------- Unload Class -------------------
-function Unload:new(unloadTrigger, callTrigger)
-	local self = setmetatable({}, Unload_mt)
+function Unload:new(isServer, isClient, unloadTrigger, callTrigger)
+	local self = Object:new(isServer, isClient, Unload_mt)
 	self.unloadTrigger = unloadTrigger
 	self.callTrigger = callTrigger
 	self.items = {}
@@ -140,8 +141,9 @@ end
 -------------- End Unload Class ---------------
 
 -------------- Shelf Class --------------------
-function Shelf:new(triggerId, rack)
-	local self = setmetatable({}, Shelf_mt)
+function Shelf:new(isServer, isClient, triggerId, spaceId, rack)
+	local self = Object:new(isServer, isClient, Shelf_mt)
+	self.spaceId = spaceId
 	self.triggerId = triggerId
 	self.itemId = nil
 	rack:addShelf(self)
@@ -199,9 +201,12 @@ function Warehouse:new(isServer, isClient, customMt)
 	--[[ Maintaining a list of all shelves in addition to the shelfTriggers tabls
 		 to iterate, in order found in XML, to find first open shelf]]
 	self.shelves = {}
+	self.spaces = {}
 	self.activateText = "" --text for activating the rack trigger
 	self.currentRack = nil --current rack where the player is standing
 	self.currentUnloadTrigger = nil --current unload trigger to collect from if activated
+	
+	self.moveUpdates = {} --list of new pallet moves
 	
 	self.action = ACTIVATE.NO_ACTION
 	
@@ -237,21 +242,24 @@ function Warehouse:load(xmlFilename, x, y, z, rx, ry, rz, initRandom)
     --Load the unloading triggers
 	for unloadElement, unloadTrigger in xmlIter("placeable.warehouse.unloadTriggers.unloadTrigger", "unloadNode") do
 		local callTrigger = I3DUtil.indexToObject(nodeId, getXMLString(xmlFile, unloadElement .. "#callNode"))
-		self.unloadTriggers[unloadTrigger] = Unload:new(unloadTrigger, callTrigger)
+		self.unloadTriggers[unloadTrigger] = Unload:new(self.isServer, self.isClient, unloadTrigger, callTrigger)
 	end
 	
 	--Load the pickup space triggers
 	for _, trigger in xmlIter("placeable.warehouse.pickupArea.space", "node") do
-		table.insert(self.pickupAreaTriggers, PickupSpace:new(trigger))
+		local pickupSpace = PickupSpace:new(self.isServer, self.isClient, trigger, #self.spaces + 1)
+		table.insert(self.pickupAreaTriggers, pickupSpace)
+		table.insert(self.spaces, pickupSpace)
 	end
 	
 	--Load the rackSpace and shelf triggers
 	for rackElement, rack in xmlIter("placeable.warehouse.storage.rackSpace", "triggerNode") do
 		local rackName = g_i18n:getText(getXMLString(xmlFile, rackElement .. "#name"))
-		self.rackTriggers[rack] = Rack:new(rack, rackName)
+		self.rackTriggers[rack] = Rack:new(self.isServer, self.isClient, rack, rackName)
 		for _, shelf in xmlIter(rackElement .. ".shelf", "triggerNode") do
-			self.shelfTriggers[shelf] = Shelf:new(shelf, self.rackTriggers[rack])
+			self.shelfTriggers[shelf] = Shelf:new(self.isServer, self.isClient, shelf, #self.spaces + 1, self.rackTriggers[rack])
 			table.insert(self.shelves, self.shelfTriggers[shelf])
+			table.insert(self.spaces, self.shelfTriggers[shelf])
 		end
 	end
 	
@@ -335,7 +343,7 @@ function Warehouse:onActivateObject()
 			local object = g_currentMission:getNodeObject(itemId)
 			local shelf = self:nextShelf()
 			if shelf ~= nil then
-				self:movePallet(shelf, object)
+				self:movePallet(shelf, object, false)
 			end
 		end
 	end
@@ -364,7 +372,7 @@ function Warehouse:rackUnloadCallback(outboundItems)
 		if pickupSpace ~= nil then
 			--verify and empty that the shelf provided contains the item being moved
 			local object = g_currentMission:getNodeObject(item.itemId)
-			self:movePallet(pickupSpace, object)
+			self:movePallet(pickupSpace, object, false)
 		else
 			printError("expected free space for pallets but no space found")
 		end
@@ -521,6 +529,7 @@ end
 function Warehouse:countPickupSpaces()
 	local count = 0
 	for _, pickupSpace in ipairs(self.pickupAreaTriggers) do
+		print("found a pickup space")
 		if not pickupSpace:isOccupied() then
 			count = count + 1
 		end
@@ -528,8 +537,14 @@ function Warehouse:countPickupSpaces()
 	return count
 end
 
+function Warehouse:getSpaceFromId(spaceId)
+	--find the space that the pallet is moving to
+	return self.spaces[spaceId]
+end
+
 --moves a pallet to the location of the spaceId trigger
-function Warehouse:movePallet(space, object)
+function Warehouse:movePallet(space, object, noEventSend)
+	MovePalletEvent.sendEvent(self, space, object, noEventSend)
 	-- move the pallet to the space then unmount it so it can be moved manually.
 	object:mount(self, space.triggerId, 0,0,0, 0,0,0)
 	object:unmount()

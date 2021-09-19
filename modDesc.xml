@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="53">
     <author>MaddyPhi</author>
-    <version>1.0.1.0</version>
+    <version>1.0.2.0</version>
 	<title>
 		<en>Automatic Storage</en>
 		<de>Automatische Lagerung</de>
@@ -30,6 +30,14 @@ Daily Upkeep: 100 $
 Shed:
 Price: 28000 $
 Daily Upkeep: 30 $
+
+
+Changelog:
+Version 1.0.2.0:
+- Fixed multiplayer support
+
+Version 1.0.1.0:
+- Fixed shelf space and pickup space not clearing when pallet removed by way of emptying or auto-loading onto trailer.
 ]]>
 		</en>
 		<de>
@@ -52,6 +60,13 @@ Unterhalt: 100 €/ Tag
 Unterstand:
 Preis: 28000 €
 Unterhalt: 30 €/ Tag
+
+Änderungsprotokoll:
+Version 1.0.2.0:
+- Multiplayer-Unterstützung behoben
+
+Version 1.0.1.0:
+- Behoben, dass Regalplatz und Abholraum nicht frei sind, wenn die Palette durch Entleeren oder automatisches Laden auf den Anhänger entfernt wird.
 ]]>
 		</de>
 		<fr>
@@ -74,6 +89,13 @@ Entretien quotidien : 100 €
 Hangar:
 Prix ​​: 28000 €
 Entretien quotidien : 30 €
+
+Journal des modifications :
+Version 1.0.2.0 :
+- Correction du support multijoueur
+
+Version 1.0.1.0 :
+- Correction du fait que l'espace de stockage et la salle de ramassage ne sont pas libres lorsque la palette est retirée par vidage ou chargement automatique sur la remorque.
 ]]>
 		</fr>
 		<pt>
@@ -96,6 +118,13 @@ Manutenção diária: 100 $
 Shed (Galpão):
 Preço: 28000 $
 Manutenção diária: 30 $
+
+Changelog:
+Versão 1.0.2.0:
+- Suporte multijogador fixo
+
+Versão 1.0.1.0:
+- Corrigido que o espaço da prateleira e a sala de coleta não ficam livres quando o palete é removido por esvaziamento ou carregamento automático no trailer.
 ]]>
 		</pt>
 	</description>
