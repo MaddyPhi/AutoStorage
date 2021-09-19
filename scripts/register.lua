@@ -3,12 +3,12 @@ Copyright (c) MaddyPhi, 2021
 
 Author: MaddyPhi (Madison)
 Date: 07-16-2021
-Version: 1.0.0.0
+Version: 1.0.1.0
 ]]
 local VERSION = {
 	MAJOR 		= 1,
 	MINOR 		= 0,
-	BUILD 		= 0,
+	BUILD 		= 2,
 	REVISION 	= 0
 }
 
@@ -137,6 +137,11 @@ local function init()
     local placeablePath = g_currentModDirectory .. "scripts/autowarehouse.lua"
     if checkFileExists(placeablePath) then
         g_placeableTypeManager:addPlaceableType("warehousePlaceable", "Warehouse", placeablePath)
+    end
+	--Load Placeable Warehouse
+    local eventPath = g_currentModDirectory .. "scripts/movePalletEvent.lua"
+    if checkFileExists(placeablePath) then
+        source(eventPath)
     end
 end
 
